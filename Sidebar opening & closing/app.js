@@ -29,3 +29,18 @@ function toggleSidebar() {
 }
 
 toggleBtn.addEventListener('click', toggleSidebar);
+
+
+
+
+var bool = true;
+
+function myFunction() {
+
+
+
+    (bool) ? document.getElementById("sidebar").style.background = "red":
+        document.getElementById("sidebar").style.background = "yellow";
+    bool = !bool;
+
+}
