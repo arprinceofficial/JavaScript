@@ -15,11 +15,14 @@
 //     }
 // }
 
-// toggle.onclick = function() {
-//     toggle.classList.toggle('active');
-//     sidebar.classList.toggle('active');
-// }
+// toggle Animation
+toggle.onclick = function() {
+    toggle.classList.toggle('active');
+    sidebar.classList.toggle('active');
+}
 
+
+// sidebar open & close
 let toggleBtn = document.querySelector('#toggle');
 
 function toggleSidebar() {
@@ -31,8 +34,7 @@ function toggleSidebar() {
 toggleBtn.addEventListener('click', toggleSidebar);
 
 
-
-
+// changing background color by clicking div 
 var bool = true;
 
 function myFunction() {
