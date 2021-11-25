@@ -7,26 +7,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 </head>
 
 <body>
     <div class="wrapper">
         <div id="toggle"></div>
-        <div id="abx" onclick="javascript:myFunction();">
-            <div id="sidebar">
-                <!--class="active" -->
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Team</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </div>
+        <!--adding javascript onclick function for change the div color-->
+        <div id="sidebar" onclick="javascript:myFunction();">
+            <!--class="active" -->
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Team</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
         </div>
+        <span id="RightArrow" class="material-icons" onclick="javascript:myFunction();">keyboard_arrow_right</span>
+    </div>
 
+
+
+    <div id="toggle-02"></div>
+
+
+    <div id="sidebar-02">
+        <!--class="active" -->
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Team</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
     </div>
     <script src="app.js"></script>
 </body>

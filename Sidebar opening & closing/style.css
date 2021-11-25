@@ -17,16 +17,19 @@ body {
 
 #toggle {
     position: fixed;
-    top: 20px;
-    right: 20px;
+    top: 50%;
+    right: 0;
     width: 60px;
     height: 60px;
-    border-radius: 20px;
+    /* border-radius: 20px; */
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
     background-color: rgba(3, 3, 3, 0.692);
     cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: 0.5s;
 }
 
 #toggle::before {
@@ -56,10 +59,15 @@ body {
     transform: translateY(0px) rotate(-45deg);
 }
 
+#toggle.active {
+    right: 300px;
+    transition: 0.5s;
+}
+
 #sidebar {
     position: fixed;
     top: 0;
-    left: -300px;
+    right: -300px;
     width: 300px;
     height: 100vh;
     background: yellow;
@@ -67,7 +75,7 @@ body {
 }
 
 #sidebar.active {
-    left: 0px;
+    right: 0px;
 }
 
 #sidebar ul {
@@ -94,5 +102,91 @@ body {
 }
 
 .show {
-    left: 0px !important;
+    right: 0px !important;
+}
+
+
+/* RightArrow on & off */
+
+#RightArrow {
+    cursor: pointer;
+    /* background-color: rgba(33, 128, 252, 0.918); */
+    ;
+}
+
+#RightArrow.active {
+    cursor: pointer;
+    transform: rotate(90deg);
+    background-color: rgba(33, 128, 252, 0.918);
+    color: #ffff;
+    border: none;
+}
+
+
+/* sidebar-02 start */
+
+#sidebar-02 {
+    position: fixed;
+    bottom: 0;
+    height: 0;
+    width: 100%;
+    background: red;
+    transition: 0.5s;
+}
+
+.show-02 {
+    bottom: 0;
+    height: 200px !important;
+}
+
+#toggle-02 {
+    position: fixed;
+    bottom: 0;
+    width: 60px;
+    left: 50%;
+    height: 60px;
+    /* border-radius: 20px; */
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: rgba(3, 3, 3, 0.692);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+
+#toggle-02.active {
+    bottom: 200px;
+    cursor: pointer;
+}
+
+
+/* toggle animation star and off */
+
+#toggle-02::before {
+    content: '';
+    position: absolute;
+    width: 28px;
+    height: 2px;
+    background: cyan;
+    transform: translateY(-5px);
+}
+
+#toggle-02::after {
+    content: '';
+    position: absolute;
+    width: 28px;
+    height: 2px;
+    background: cyan;
+    transform: translateY(5px);
+    transition: 0.2s;
+}
+
+#toggle-02.active::before {
+    transform: translateY(0px) rotate(45deg);
+}
+
+#toggle-02.active::after {
+    transform: translateY(0px) rotate(-45deg);
 }
