@@ -1,0 +1,14 @@
+  .sidebar {
+        position: fixed;
+    top: 0;
+/*     padding: 30px 25px; */
+    right: -500px;
+    width: 500px;
+    height: 100vh;
+    background: yellow;
+    transition: 0.5s;
+    z-index: 10000000000000000;
+    }
+        .active {
+        right: 0px;
+    }

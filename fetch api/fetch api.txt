@@ -1,0 +1,1 @@
+fetch ('url') .then (res => console.log(res)) // get data from api calling N.B fetch is promise base so that is why we have to use .then
