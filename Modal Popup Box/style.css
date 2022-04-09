@@ -25,10 +25,12 @@ body {
     letter-spacing: 2px;
     text-transform: uppercase;
     transition: 0.5s;
+    z-index: 0;
 }
 
 .btn:hover {
     letter-spacing: 4px;
+    z-index: 0;
 }
 
 #popup {
@@ -43,6 +45,7 @@ body {
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08);
     transition: 1s;
     visibility: hidden;
+    z-index: 100000000000000000000000000000000;
 }
 
 #popup.active {
